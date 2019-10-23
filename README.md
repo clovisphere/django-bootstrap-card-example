@@ -19,7 +19,7 @@ $ cd {APP_DIRECTORY} && pip install -r requirements.txt
 # initial setup
 $ ./manage.py migrate
 # run app
-./manage.py runserver
+./manage.py runserver 9000
 ```
 The *database* is empty at this point, you may want to populate it..
 
@@ -28,6 +28,6 @@ The *database* is empty at this point, you may want to populate it..
 $ ./manage.py createsuperuser
 ```
 
-Start app by running the `./manage.py runserver` command. You can now access the admin portal on [http://localhost/admin](http://localhost/admin), add some books and authors.
+Start app by running the `./manage.py runserver 9000` command. You can now access the admin portal on [http://localhost:9000/admin](http://localhost:9000/admin), add some books and authors.
 
 :smiley::wink: enjoy:zzz::ok_hand:
