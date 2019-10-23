@@ -21,7 +21,7 @@ $ ./manage.py migrate
 # run app
 ./manage.py runserver 9000
 ```
-The **db** is empty, so you may want to populate it.
+The *database* is empty at this point, you may want to populate it..
 
 ```bash
 # create user to access db
