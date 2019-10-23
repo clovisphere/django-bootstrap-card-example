@@ -1,0 +1,22 @@
+{% extends "books/base.html" %}
+
+{% block content %}
+
+<div class="card-columns">
+    {% if tags %}
+        {% for tag in tags %}
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h4 class="card-title">{{ tag.name }}</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">{% lorem 3 w random %}</h6>
+                    {% for book in tag.books %}
+                        <p class="card-text">{{ book.title }}</p>
+                    {% endfor %}
+                    <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div><!-- end div card columns -->
+
+{% endblock content %}
