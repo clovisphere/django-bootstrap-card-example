@@ -18,8 +18,16 @@ $ cd {APP_DIRECTORY} && pip install -r requirements.txt
 ```bash
 # initial setup
 $ ./manage.py migrate
-# make migrations
-$ ./manage.py makemigrations books
 # run app
 ./manage.py runserver 9000
 ```
+The **db** is empty, so you may want to populate it.
+
+```bash
+# create user to access db
+$ ./manage.py createsuperuser
+```
+
+Start app by running the `./manage.py runserver 9000` command. You can now access the admin portal on [http://localhost:9000/admin](http://localhost:9000/admin), add some books and authors.
+
+:smiley::wink: enjoy:zzz::ok_hand:
